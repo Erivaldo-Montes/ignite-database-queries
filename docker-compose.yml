@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    container_name: ignite_database_queries
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=queries_challenge
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
