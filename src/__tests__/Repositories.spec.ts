@@ -205,8 +205,6 @@ describe('Repositories', () => {
 
     const users = await gamesRepository.findUsersByGameId(game.id);
 
-    console.log(users)
-
     expect(users).toEqual([
       expect.objectContaining({
         first_name: 'Vinicius',
